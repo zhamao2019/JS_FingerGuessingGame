@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Finger Guessing Game</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/jquery-1.11.3.js"></script>
+    <script src="./js/jquery.js"></script>  
+  
+  </head>
+  <body class="bg-warning">
+      <main class="container-md pt-5">
+
+        <h1 class="ml-5">Finger Guessing</h1>
+        <div class="display-box bg-light p-5 m-5 ">
+
+          <div class="row d-flex justify-content-center">
+            <div class="col col-md-4 text-center">
+              <h5>You<span id="countUser" style>0</span></h5>
+            </div>
+            <div class="col col-md-4 text-center">
+              <h5 class="text-danger" id="prompt">READY</h5>
+            </div>
+            <div class="col col-md-4 text-center">
+              <h5>Computer<span id="countComputer" style>0</span></h5>
+            </div>
+            <div class="w-100"></div>
+                
+            <div class="row">
+              <div class="col col-sm-4">
+                <img src="./img/O.png" id="finalChoice" alt="finger pic">
+              </div>
+              <div class="col col-sm-4">
+                <img src="./img/vs.jpg" alt="vs pic" style="width: 150px;">
+              </div>
+              <div class="col col-sm-4">
+                <img src="./img/O.png" id="computerChoice" alt="finger pic">
+              </div>
+            </div>
+
+          </div>
+
+          <div class="row mb-3 mt-5 text-center">
+    
+            <div class="col">
+              <img src="./img/O.png" alt="hummer pic" id="choiceH" style="width: 60px;">
+            </div>
+            <div class="col">
+              <img src="./img/Y.png" alt="scissors pic" id="choiceS" style="width: 60px;">
+            </div>
+            <div class="col">
+              <img src="./img/X.png" alt="palm pic" id="choiceP" style="width: 60px;">
+            </div>
+          </div> 
+      </div>
+
+      <div class="result-list p-5 m-5">
+        <div class="row">
+          <div class="col">
+            <h5 id="resultText">Total play 0 times.</h5>
+            <ul id="results">
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      </main>
+  <script src="./js/main.js"></script> 
+  
+  </body>
+  </html>
